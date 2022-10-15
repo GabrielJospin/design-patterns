@@ -5,8 +5,8 @@ import creational.factoryMethod.readers.ReaderJson;
 
 import java.io.FileNotFoundException;
 
-public class VisorJson extends Visor{
-    public VisorJson(String path) throws FileNotFoundException, ReaderException {
+public class ViewerJson extends Viewer {
+    public ViewerJson(String path) throws FileNotFoundException, ReaderException {
         super(path);
         setReader(new ReaderJson(path));
     }

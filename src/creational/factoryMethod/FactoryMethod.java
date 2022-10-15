@@ -1,9 +1,9 @@
 package creational.factoryMethod;
 
 import creational.factoryMethod.readers.ReaderException;
-import creational.factoryMethod.visor.Visor;
-import creational.factoryMethod.visor.VisorCsv;
-import creational.factoryMethod.visor.VisorJson;
+import creational.factoryMethod.visor.Viewer;
+import creational.factoryMethod.visor.ViewerCsv;
+import creational.factoryMethod.visor.ViewerJson;
 
 import java.io.FileNotFoundException;
 
@@ -11,9 +11,9 @@ public class FactoryMethod {
 
     public enum Type{CSV, JSON};
 
-    public static Visor getVisorCsv(String path){
+    public static Viewer getVisorCsv(String path){
         try {
-            return new VisorCsv("./inSys/creational/factoryMethod/data.csv");
+            return new ViewerCsv("./inSys/creational/factoryMethod/data.csv");
         } catch (FileNotFoundException e) {
             System.out.println("Not Found File" + path);
             System.out.println(e.getMessage());
@@ -25,21 +25,21 @@ public class FactoryMethod {
         }
     }
 
-    public static Visor getVisorJson(String path){
+    public static Viewer getVisorJson(String path){
         try {
-            return new VisorJson(path);
+            return new ViewerJson(path);
         } catch (FileNotFoundException e) {
             System.out.println("Not Found File" + path);
             System.out.println(e.getMessage());
             return null;
         } catch (ReaderException e) {
-            System.out.println("File is not a CSV file");
+            System.out.println("File is not a JSON file");
             System.out.println(e.getMessage());
             return null;
         }
     }
 
-    public static Visor getVisor(String path, Type type){
+    public static Viewer getVisor(String path, Type type){
         if(type.equals(Type.CSV))
             return getVisorCsv(path);
         if(type.equals(Type.JSON))
@@ -49,7 +49,7 @@ public class FactoryMethod {
 
     public static void test(String path, Type type){
 
-        Visor visor = getVisor(path, type);
+        Viewer visor = getVisor(path, type);
 
         if(visor == null){
             System.out.println("VISOR NULL");

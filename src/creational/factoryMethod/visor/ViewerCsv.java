@@ -6,11 +6,11 @@ import creational.factoryMethod.readers.ReaderException;
 
 import java.io.FileNotFoundException;
 
-public class VisorCsv extends Visor {
+public class ViewerCsv extends Viewer {
 
     private Reader reader;
 
-    public VisorCsv(String path) throws FileNotFoundException, ReaderException {
+    public ViewerCsv(String path) throws FileNotFoundException, ReaderException {
         super(path);
         setReader(new ReaderCsv(path));
     }

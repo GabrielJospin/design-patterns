@@ -4,12 +4,12 @@ import creational.factoryMethod.PartyData;
 import creational.factoryMethod.readers.Reader;
 import java.util.List;
 
-public abstract class Visor {
+public abstract class Viewer {
 
     private String path;
     private Reader reader;
 
-    Visor(String path){
+    Viewer(String path){
         this.path = path;
     }
 
