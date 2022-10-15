@@ -17,7 +17,7 @@
 ## Temática
 
 Os Desenvolvedores do *The Order of the Seven*
-enfrentavam um grande problema. O chat do jogo era
+enfrentavam um grande problema: O chat do jogo era
 salvo de forma instantânea no cloud. Porém era muito
 difícil abrir o arquivo em diversos computadores
 diferentes sem sobrescrever arquivos ou sobrecarregar
