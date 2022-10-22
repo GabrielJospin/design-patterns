@@ -1,4 +1,4 @@
-package creational.builder.entities;
+package creational.builder;
 
 public class Builder {
 
