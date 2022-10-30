@@ -9,7 +9,7 @@
 -  Construção do objeto separado da sua própria classe
 em uma classe "builder"
 
-## temática
+## Temática
 
 Os desenvolvedores do *The Order of the Seven* estão com
 muita complicações na construçãoo de personagens, isso porque
