@@ -141,7 +141,7 @@ public class Character {
                 ", level=" + level +
                 ", gender=" + gender +
                 ", race='" + race + '\'' +
-                ", classe='" + classe + '\'' +
+                ", Classe='" + classe + '\'' +
                 ", align='" + "(" + align_good_bad + "," + align_law_chaos + ")" + '\'' +
                 ", strength=" + strength +
                 ", dexterity=" + dexterity +
